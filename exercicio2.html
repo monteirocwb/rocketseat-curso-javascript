@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Exercicio Dois</title>
+  </head>
+<body>
+<script>
+
+let cont = 0;
+
+function exibePar(x, y){
+    if(x < y){
+    for (let i = x ; i <= y; i++){
+        if (i % 2 == 0){
+            console.log(i);
+            cont++;
+        };
+    };
+}else{
+    for (let i = y ; i <= x; i++){
+        if (i % 2 == 0){
+            console.log(i);
+            cont++;
+        };
+    };
+    };
+}
+
+console.log(exibePar(1, 100),`Temos ${cont} pares`);
+
+</script>
+</body>
+</html>

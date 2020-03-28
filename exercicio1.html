@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Exercicio Um</title>
+  </head>
+<body>
+<script>
+
+const endereco = {
+ rua: "Rua dos pinheiros",
+ numero: 1293,
+ bairro: "Centro",
+ cidade: "Sao Paulo",
+ uf: "SP"
+};
+
+function retornaEndereco({cidade, uf, numero, bairro, rua}){
+  return `O usuario mora em ${cidade} / ${uf}, no bairro ${bairro} e na ${rua} numero ${numero}`;
+}
+
+console.log(retornaEndereco(endereco));
+
+</script>
+</body>
+</head>
+</html>
