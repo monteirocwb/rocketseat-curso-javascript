@@ -15,6 +15,10 @@ let usuarios = [
     habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
 } ];
 
+/**
+
+Antiga function
+
 function exibeHabilidades(usuarios) {
   for (usuario of usuarios) {
     console.log(
@@ -27,7 +31,20 @@ function exibeHabilidades(usuarios) {
 }
 
 exibeHabilidades(usuarios);
+**//
+  
+// Nova function. Mais limpa
 
+function exibeHabilidades(){
+  for (usuario of usuarios){
+    console.log(`O ${usuario.nome} possui as habilidades:
+     ${usuario.habilidades.join(", ")}`);
+  };
+}
+  
+console.log(exibeHabilidades(usuarios));
+
+ 
 // Usar for...if e .join
 // Reproduzir o resultado abaixo:
 // Diego possui as habilidades: Javascript, ReactJS, Redux
